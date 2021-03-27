@@ -29,6 +29,7 @@
     "@babel/plugin-proposal-optional-chaining": "^7.13.12",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.13.12",
+    "@jamesives/github-pages-deploy-action": "^4.1.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -46,10 +47,8 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint --cache --fix"
-    ],
-    "*.{css,md,yml}": "prettier --write"
+    "*.js": "eslint --cache --fix",
+    "*.{css,md,yml}": "prettier --write",
+    "*.{js,css,md}": "prettier --write"
   }
 }
