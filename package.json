@@ -2,7 +2,7 @@
   "name": "js--markup-styling-lessonl4",
   "version": "1.0.0",
   "description": "Домашнее задание\r Создание сложной страницы с использованием семантических элементов html5, стилизация ее в 2/3 - колоночный макет\r ---\r Цель:\r HTML является неотъемлемой частью работы JS-разработчика. В этом задании вы закрепите знания о структуре html документа и создадите один из самых часто-используемых шаблонов - трехколоночный макет.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "lint": "prettier --check . && eslint .",
     "lint:fix": "prettier --write . && eslint . --fix",
@@ -47,8 +47,10 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{css,md,yml}": "prettier --write",
-    "*.{js,css,md}": "prettier --write"
+    "*.js": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ],
+    "*.{css,md,yml}": "prettier --write"
   }
 }
