@@ -1,15 +1,16 @@
 {
   "name": "js--markup-styling-lessonl4",
   "version": "1.0.0",
-  "description": "Домашнее задание\r Создание сложной страницы с использованием семантических элементов html5, стилизация ее в 2/3 - колоночный макет\r ---\r Цель:\r HTML является неотъемлемой частью работы JS-разработчика. В этом задании вы закрепите знания о структуре html документа и создадите один из самых часто-используемых шаблонов - трехколоночный макет. (https://upload.wikimedia.org/wikipedia/commons/5/50/%D0%A2%D1%80%D1%91%D1%85%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B2%D0%B5%D0%B1-%D0%BC%D0%B0%D0%BA%D0%B5%D1%82.png )",
-  "main": "index.js",
+  "description": "Домашнее задание\r Создание сложной страницы с использованием семантических элементов html5, стилизация ее в 2/3 - колоночный макет\r ---\r Цель:\r HTML является неотъемлемой частью работы JS-разработчика. В этом задании вы закрепите знания о структуре html документа и создадите один из самых часто-используемых шаблонов - трехколоночный макет.",
+  "private": true,
   "scripts": {
     "lint": "prettier --check . && eslint .",
     "lint:fix": "prettier --write . && eslint . --fix",
     "dev": "webpack serve",
     "build": "webpack --mode production",
-    "static": "static ./src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "static": "static .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -31,20 +32,19 @@
     "@babel/preset-env": "^7.13.12",
     "@jamesives/github-pages-deploy-action": "^4.1.0",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "html-webpack-plugin": "^5.3.1",
+    "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "prettier": "2.2.1",
-    "simple-git-hooks": "^2.2.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

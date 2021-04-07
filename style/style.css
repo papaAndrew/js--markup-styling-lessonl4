@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid gray;
+}
+
+p {
+  margin: 10px;
+}
+
+a {
+  margin: 10px;
+}
+
+body div {
+  display: block;
+  overflow: auto;
+  margin: 10px 0px 10px 0px;
+}
+
+header {
+  min-height: 250px;
+  background-color: lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: flex-start;
+}
+
+header img {
+  margin: 5px;
+  width: 20%;
+  min-width: 265px;
+  height: 250px;
+}
+
+.title-box {
+  margin: 5px;
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  justify-content: space-between;
+}
+
+.title-box div {
+  margin: 6px;
+  padding: 5px;
+  padding-inline-end: 10%;
+  font-weight: bold;
+}
+
+.content {
+  background-color: lightyellow;
+  display: flex;
+  height: 100%;
+  min-height: 500px;
+}
+
+.content div {
+  margin: 5px;
+}
+
+.left-column {
+  background-color: yellow;
+  flex-basis: 20%;
+  min-width: 20%;
+}
+.left-column * {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.mid-column {
+  flex-grow: 1;
+}
+
+.mid-column * {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.right-column {
+  background-color: yellowgreen;
+  flex-basis: 27%;
+}
+.right-column * {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+footer {
+  background-color: cadetblue;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+footer div {
+  width: 22%;
+  min-width: 150px;
+  height: 100%;
+  min-height: 150px;
+  margin: 20px;
+  margin-right: -4;
+  padding: 20px;
+  display: inline-block;
+}

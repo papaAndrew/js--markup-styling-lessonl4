@@ -3,8 +3,7 @@ on:
   push:
     branches:
       - master
-      - setup-project
-      - step-01
+      - try-01
 
 jobs:
   deploy-to-gh-pages:
