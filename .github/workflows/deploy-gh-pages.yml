@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-      - try-01
+      - dev-main
 
 jobs:
   deploy-to-gh-pages:

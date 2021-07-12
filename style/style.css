@@ -17,6 +17,11 @@ a {
   margin: 10px;
 }
 
+article {
+  margin: 10px;
+  padding: 10px;
+}
+
 body div {
   display: block;
   overflow: auto;
@@ -99,11 +104,12 @@ footer {
   background-color: cadetblue;
   text-align: center;
   flex-wrap: wrap;
+  padding: 1em;
 }
 
 footer div {
   width: 22%;
-  min-width: 150px;
+  min-width: 200px;
   height: 100%;
   min-height: 150px;
   margin: 20px;
